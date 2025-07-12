@@ -25,3 +25,15 @@ my-next-app/
 ├── out/                      # Static files (after export)
 ├── package.json
 └── README.md
+
+## Setup GitHub Secrets
+Go to GitHub → Settings → Secrets and variables → Actions → New repository secret
+
+Add the following secrets:
+
+Secret Name	Example Value
+ftp_host	sftp.yourserver.com
+ftp_username	your-ftp-username
+ftp_password	your-ftp-password
+
+🔐 These credentials will be used to securely deploy your app to your remote server via SFTP.
